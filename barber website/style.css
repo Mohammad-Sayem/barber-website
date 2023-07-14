@@ -1,0 +1,262 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar start  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 4vh 0vh;
+    height: 10;
+    position: absolute;
+
+
+}
+
+.logo {
+    margin-left: 12%;
+    width: 10%;
+
+}
+
+.menu {
+    margin-right: 5%;
+    width: 2%;
+    height: 2%;
+}
+
+/* navbar ends 
+ */
+/* container starts  */
+.container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #e66680), url(./img/banner.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.container h1 {
+    font-size: 4rem;
+    font-family: 'Kaushan Script', cursive;
+    color: whitesmoke;
+
+}
+
+.container p {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: whitesmoke;
+    margin: 1rem 0rem;
+
+}
+
+.container .btn {
+    margin-top: 1rem;
+
+
+}
+
+.container .btn a {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 0.5px solid whitesmoke;
+    padding: 10px;
+    font-size: 0.7rem;
+    margin: 0px 5px;
+    position: relative;
+    z-index: 1;
+
+
+
+}
+
+.container span {
+    width: 0%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    height: 100%;
+    background-color: whitesmoke;
+
+}
+
+.container a:hover span {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+
+
+
+
+
+}
+
+.container a:hover {
+    color: black;
+    transition: 0.5s;
+}
+/* container end  */
+/* features start  */
+.features{
+    width: 100%;
+    padding: 10vh 0vh;
+    
+
+}
+.main-text{
+    margin: 7vh 0px;
+    text-align: center;
+
+    width: 100%;
+}
+.main-text h3{
+    font-size: 2.2rem;
+
+
+}
+.main-text p{
+    font-size: 1.2rem;
+    color: #e66680;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+    
+}
+.main-text p::before{
+    content: '';
+    position: absolute;
+    top: -17px;
+    
+    background: linear-gradient(#e66680,#ffff);
+    width: 50px;
+    height: 30px;
+    transform: rotate(10deg);
+    border-top-left-radius: 34px;
+    border-bottom-right-radius: 34px;
+    z-index: -1;
+}
+.feature-row {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.feature-col1{
+    width: 48%;
+
+}
+.feature-col2{
+    width: 48%;
+    margin: auto;
+   
+   
+   
+
+    
+
+
+}
+.feature-col2 img{
+    width: 70%;
+    border-radius: 11px;
+    height: 65vh;
+    margin: 0% 15%;
+
+}
+
+/* services start  */
+.services{
+    width: 100%;
+    padding: 7vh 0vh;
+}
+
+
+.boxes{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+
+}
+.box img{
+    width: 100%;
+    
+    border-radius: 10px;
+
+}
+.box{
+    width: 48%;
+    margin: 1%;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5),#e66680);
+    opacity: 0;
+    border-radius: 10px;
+
+}
+.box-des{
+    color: white;
+    position: absolute;
+    
+    left:10%;
+    bottom: 0%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    opacity:0 ;
+
+}
+.box:hover .overlay{
+    opacity: 1;
+    transition: 0.5s;
+
+}
+.box:hover .box-des{
+   
+    opacity: 1;
+    transition: 0.5s;
+    bottom: 25%;
+
+}
+i{
+    color: #e66680;
+    font-size: 30px;
+    border: 0.5px solid #e66680;
+    padding: 3px;
+    border-radius: 5px;
+    
+    
+   
+
+
+    
+}
+.icon{
+    display: flex;
+    align-items: center;
+    
+}
+.icon p{
+    margin: 10px;
+}
+
+

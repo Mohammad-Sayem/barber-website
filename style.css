@@ -1,0 +1,547 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar start  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.navbar .img1 {
+    width: 9%;
+    height: 6vh;
+    margin-left: 15%;
+}
+
+.navbar .img2 {
+
+    width: 3%;
+    height: 3vh;
+    margin-right: 4%;
+
+
+}
+
+/* navbar end  */
+/* header start  */
+.header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(./img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    
+
+}
+
+.header-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 60%;
+    height: 60vh;
+
+
+}
+
+.header-text h1 {
+    font-size: 4.5rem;
+    color: whitesmoke;
+    margin: 6px;
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+.header-text p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: whitesmoke;
+    margin-bottom: 50px;
+
+}
+
+.header-btn {
+    width: 17%;
+    padding: 0px 8px;
+    border: 0.5px solid whitesmoke;
+    color: whitesmoke;
+    display: inline;
+    margin: 8px;
+    padding: 10px 15px;
+    position: relative;
+
+
+
+}
+
+.header-text a {
+    text-decoration: none;
+    font-size: 0.7rem;
+
+
+
+}
+
+.header-text span {
+    width: 0%;
+    height: 100%;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #ffffff;
+    z-index: -1;
+
+}
+
+.header-text a:hover span {
+    width: 100%;
+    transition: 0.5s;
+
+}
+
+.header-text a:hover {
+    color: black;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+/* header ends  */
+/* Features starts  */
+.feature {
+    width: 100%;
+    height: auto;
+    background-color: #efefef;
+    padding: 7vh 0px;
+
+}
+
+.feature .main-text {
+    width: 100%;
+    text-align: center;
+    padding:  10vh 0px;
+    
+    
+
+
+}
+
+.feature .main-text h1 {
+    font-size: 2.2rem;
+}
+
+.feature .main-text p {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #009688;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.feature .main-text p::before {
+    content: '';
+    background: linear-gradient(#009688, #fff);
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: -17px;
+    left: 0px;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius:34px ;
+    border-bottom-right-radius:34px ;
+
+}
+
+
+.row{
+    width: 80%;
+   
+    display: flex;
+    margin:0px auto;
+   
+    
+}
+.feature .col1{
+    flex-basis: 50%;
+    padding-top: 4vh;
+   
+
+}
+.feature .col2{
+    flex-basis: 50%;
+   
+
+    
+
+
+}
+.feature .col2 img{
+    width: 70%;
+    border-radius: 15px;
+    height: 65vh;
+    margin: 0% 15%;
+}
+.feature .col1 h3{
+    font-size: 0.9rem;
+    color: #009688;
+    margin-top: 15px;
+}
+.feature .icon p{
+    font-size: 0.7rem;
+    font-weight: 100;
+    margin-left: 10px;
+}
+.feature .icon {
+    display: flex;
+    align-items: center;
+    
+}
+.feature .icon i{
+    font-size: 25px;
+ 
+    width: 35px;
+    border: 1px solid #009688;
+    border-radius: 6px;
+    color: #009688;
+    padding: 4px;
+    margin: 15px 0px;
+
+}
+
+/* feature end  */
+/* services starts  */
+.services{
+    width: 100%;
+    
+    background-color: #efefef;
+    padding: 7vh 0vh;
+}
+.services .main-text{
+    text-align: center;
+    padding:  10vh 0px;
+    width: 100%;
+}
+.services .main-text h1{
+    font-size: 2.2rem;
+}
+.services .main-text p{
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #009688;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+
+}
+.services .main-text p::before{
+    content: '';
+    background:linear-gradient(#009688,#fff ) ;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: -17px;
+    left: 0px;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.services .imgs{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+
+    
+}
+.services .imgs img{
+    width: 100%;
+    
+    border-radius: 7px;
+}
+/* .services .imgs .pic{
+    width: 100%;
+
+} */
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 7px;
+    background: linear-gradient(rgba(0,0,0,0.5), #009688);
+    opacity: 0;
+
+    
+
+}
+
+.pic:hover .overlay{
+    opacity: 1;
+    transition: 1s;
+}
+.services .pic{
+   
+    width: 48%;
+    margin: 1%;
+    position: relative;
+}
+.pic-dec{
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    bottom: 0%;
+    color: white;
+    /* transform: translateX(-50%); */
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+
+
+
+
+}
+.pic-dec h3{
+    font-size: 1rem;
+}
+.pic-dec p{
+    font-size: 0.8rem;
+}
+hr{
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    margin: 8px auto;
+
+
+}
+.pic:hover .pic-dec{
+    bottom: 40%;
+    opacity: 1;
+
+
+}
+/* sevices end  */
+/* testimonial start  */
+.testimonial{
+    width: 100%;
+    height:vh;
+    padding: 10vh 0vh;
+
+}
+.test-text{
+    margin: 5vh auto;
+    width: 100%;
+   
+    text-align: center;
+    height: 15vh;
+
+}
+.test-text h1{
+    font-size: 2.2rem;
+
+}
+.test-text p{
+    font-size: 1rem;
+    color: #009688;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    font-weight: bolder;
+
+}
+.test-text p::before{
+    width: 50%;
+    height: 30px;
+    content: "";
+    position: absolute;
+    top: -17px;
+    left: 0px;
+    background: linear-gradient(#009688,#fff);
+    transform: rotate(10deg);
+    border-top-left-radius: 34px;
+    border-bottom-right-radius: 34px;
+    z-index: -1;
+}
+.boxes{
+    width: 80%;
+    display: flex;
+    margin:  auto;
+
+    height: vh;
+    justify-content: space-between;
+    box-shadow: 5px;
+}
+.box{
+    width: 32%;
+    height: ;
+    
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #009688;
+    padding: 5vh 0px;
+}
+.box .row1{
+    display: flex;
+    width: 94%;
+    margin: 2vh auto;
+
+}
+.box .row1 div{
+    margin: 0% 3%;
+}
+.box .row1 h3{
+    font-size: 0.9rem;
+
+}
+.box .row1 p{
+    font-size: 0.7rem;
+    color: #009688;
+}
+.box .row1 img{
+    margin: auto 0px;
+    width: 13%;
+    height: 13%;
+
+}
+.box .row1 i{
+    font-size: 1rem;
+    color: #4cb7f5;
+}
+
+
+
+
+
+.box .row2{
+    width: 94%;
+    margin: auto;
+}
+.box .row2 p{
+    font-size: 0.8rem;
+}
+.box:hover{
+    transform: translateY(-7px);
+    transition: 0.5s;
+
+}
+/* testomonia end  */
+/* footer start  */
+.footer{
+    width: 100%;
+    padding-bottom: 10vh;
+    background-color: #efefef;
+    padding: 7vh 0vh;
+}
+.footer-text{
+    
+    width: 100%;
+    padding:  10vh 0px;
+    text-align: center;
+    height: 15vh;
+
+}
+.footer-text h1{
+    font-size: 2.2rem;
+
+}
+.footer-text p{
+    font-size: 1rem;
+    color: #009688;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    font-weight: bolder;
+
+}
+.footer-text p::before{
+    width: 50%;
+    height: 30px;
+    content: "";
+    position: absolute;
+    top: -17px;
+    left: 0px;
+    background: linear-gradient(#009688,#fff);
+    transform: rotate(10deg);
+    border-top-left-radius: 34px;
+    border-bottom-right-radius: 34px;
+    z-index: -1;
+}
+.footer-row{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.footer-col1{
+    width: 46%;
+
+}
+.footer-col2{
+    width: 46%;
+    text-align: right;
+
+}
+.footer-row h3{
+ font-size: 1.1rem;
+
+ margin: 15px 0px;
+    
+}.footer-row p{
+ font-size: 0.9rem;
+ 
+ line-height: 25px;
+    
+}
+.footer-row p i{
+    color: #009688;
+}
+.footer-icons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5vh;
+
+
+}.footer-icons i{
+    border: 0.5px solid #009688;
+
+    font-size: 15px;
+    padding: 5px;
+    color: #009688;
+    margin: 25px 5px;
+
+}
+.footer-icons p{
+    font-size: 00.7rem;
+    
+}
+.footer-icons i:hover{
+    background-color: #009688;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-7px);
+}
